@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Limaso</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <header>
+        <div class="navbar">
+            <div class="navbar-logo">
+                <img src="./img/logo.png" alt="">
+            </div>
+            <nav class="navbar-nav">
+                <a href="#" class="navbar-nav-item navbar-nav-item__active">ткани</a>
+                <a href="#" class="navbar-nav-item">домашний</a>
+                <a href="#" class="navbar-nav-item">коллекции</a>
+                <a href="#" class="navbar-nav-item">ресторанный</a>
+                <a href="#" class="navbar-nav-item">отельный</a>
+            </nav>
+            <div class="navbar-user">
+                <div class="navbar-user-search">
+                    <i class="fas fa-search"></i>
+                </div>
+                <div class="navbar-user-profile">
+                    <i class="far fa-user"></i>
+                </div>
+                <div class="navbar-user-cart">
+                    <i class="fas fa-shopping-cart"></i>
+                </div>
+            </div>
+            <button class="burger"></button>
+        </div>
+        <div class="banner">
+            <div class="container">
+                <div class="row">
+                    <h1>изысканный дизайн <br><span>теплых прокрывал</span></h1>
+                    <h3>Смотрите и выбирайте, который вам по душе</h3>
+                    <button class="banner-btn">смотреть</button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <div class="row">
+                <div class="breadcrumb">
+                    <span class="breadcrumb-link"><a href="#">Главная</a></span>
+                    <span class="breadcrumb-link"><a href="#">Каталог</a></span>
+                    <span class="breadcrumb-link breadcrumb-link__active"><a href="#">Покрывала</a></span>
+                </div>
+                <hr>
+                <div class="content">
+                    <div class="sidebar">
+                        <h2 class="sidebar-title">Категории</h2>
+                        <div class="sidebar-tabs">
+                            <div class="sidebar-tabs-item">
+                                <input class="sidebar-tabs-item-input" id="tab-one" type="checkbox" name="tabs" checked>
+                                <label class="sidebar-tabs-item-label" for="tab-one">домашний текстиль</label>
+                                <ul class="sidebar-tabs-item-content">
+                                    <li>Гобеленовые сумки</li>
+                                    <li>Скатерти</li>
+                                    <li>Пледы</li>
+                                    <li>Полотенца</li>
+                                </ul>
+                            </div>
+                            <div class="sidebar-tabs-item">
+                                <input class="sidebar-tabs-item-input" id="tab-two" type="checkbox" name="tabs">
+                                <label class="sidebar-tabs-item-label" for="tab-two">ткани для интерьера</label>
+                                <ul class="sidebar-tabs-item-content">
+                                    <li>Гобеленовые сумки</li>
+                                    <li>Скатерти</li>
+                                    <li>Пледы</li>
+                                    <li>Полотенца</li>
+                                </ul>
+                            </div>
+                            <div class="sidebar-tabs-item">
+                                <input class="sidebar-tabs-item-input" id="tab-three" type="checkbox" name="tabs">
+                                <label class="sidebar-tabs-item-label" for="tab-three">коллекции из текстиля</label>
+                                <ul class="sidebar-tabs-item-content">
+                                    <li>Гобеленовые сумки</li>
+                                    <li>Скатерти</li>
+                                    <li>Пледы</li>
+                                    <li>Полотенца</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <h2 class="sidebar-title">Цена</h2>
+                        <div class="price-slider">
+                            <div class="price-slider-range"></div>
+                            <div class="price-slider-value">
+                                <input type="text" id="amount-min" readonly>
+                                <i class="fas fa-angle-right"></i>
+                                <input type="text" id="amount-max" readonly>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="products-container">
+                        <div class="sort">
+                            <p>Сортировать по <i class="fas fa-angle-down"></i></p>
+                            <ul class="sort-list">
+                                <li class="sort-list-price-asc">Цене от дешевых к дорогим</li>
+                                <li class="sort-list-price-desc">Цене от дорогих к дешевым</li>
+                            </ul>
+                        </div>
+                        <div class="products">
+                            <div class="products-item" data-price="170">
+                                <div class="products-item-image products-item-image-one">
+                                    <img src="./img/lt1070.jpg" alt="">
+                                    <span class="products-item-image-badge">Новинка</span>
+                                </div>
+                                <div class="products-item-description">
+                                    <div class="products-item-title">
+                                        <h4>Плед "Клеточка" LT1070</h4>
+                                        <span class="products-item-price">170.00грн</span>
+                                    </div>
+                                    <button class="products-item-btn"><i class="fas fa-shopping-cart"></i></button>
+                                </div>
+                            </div>
+                            <div class="products-item" data-price="5846">
+                                <div class="products-item-image products-item-image-two">
+                                    <img src="./img/product-2.png" alt="">
+                                </div>
+                                <div class="products-item-description">
+                                    <div class="products-item-title">
+                                        <h4>Покрывало PL03</h4>
+                                        <span class="products-item-price">5846.00грн</span>
+                                    </div>
+                                    <button class="products-item-btn"><i class="fas fa-shopping-cart"></i></button>
+                                </div>
+                            </div>
+                            <div class="products-item" data-price="1702">
+                                <div class="products-item-image products-item-image-three">
+                                    <img src="./img/product-3.png" alt="">
+                                </div>
+                                <div class="products-item-description">
+                                    <div class="products-item-title">
+                                        <h4>Покрывало гобеленовое PLG03</h4>
+                                        <span class="products-item-price">1702.00грн</span>
+                                    </div>
+                                    <button class="products-item-btn"><i class="fas fa-shopping-cart"></i></button>
+                                </div>
+                            </div>
+                            <div class="products-item" data-price="546">
+                                <div class="products-item-image products-item-image-two">
+                                    <img src="./img/product-2.png" alt="">
+                                </div>
+                                <div class="products-item-description">
+                                    <div class="products-item-title">
+                                        <h4>Покрывало PL03</h4>
+                                        <span class="products-item-price">546.00грн</span>
+                                    </div>
+                                    <button class="products-item-btn"><i class="fas fa-shopping-cart"></i></button>
+                                </div>
+                            </div>
+                            <div class="products-item" data-price="1170">
+                                <div class="products-item-image products-item-image-three">
+                                    <img src="./img/product-3.png" alt="">
+                                </div>
+                                <div class="products-item-description">
+                                    <div class="products-item-title">
+                                        <h4>Покрывало гобеленовое PLG03</h4>
+                                        <span class="products-item-price">1170.00грн</span>
+                                    </div>
+                                    <button class="products-item-btn"><i class="fas fa-shopping-cart"></i></button>
+                                </div>
+                            </div>
+                            <div class="products-item" data-price="1370">
+                                <div class="products-item-image products-item-image-one">
+                                    <img src="./img/lt1070.jpg" alt="">
+                                    <span class="products-item-image-badge">Новинка</span>
+                                </div>
+                                <div class="products-item-description">
+                                    <div class="products-item-title">
+                                        <h4>Плед "Клеточка" LT1070</h4>
+                                        <span class="products-item-price">1370.00грн</span>
+                                    </div>
+                                    <button class="products-item-btn"><i class="fas fa-shopping-cart"></i></button>
+                                </div>
+                            </div>
+                            <div class="products-item" data-price="1846">
+                                <div class="products-item-image products-item-image-two">
+                                    <img src="./img/product-2.png" alt="">
+                                </div>
+                                <div class="products-item-description">
+                                    <div class="products-item-title">
+                                        <h4>Покрывало PL03</h4>
+                                        <span class="products-item-price">1846.00грн</span>
+                                    </div>
+                                    <button class="products-item-btn"><i class="fas fa-shopping-cart"></i></button>
+                                </div>
+                            </div>
+                            <div class="products-item" data-price="3170">
+                                <div class="products-item-image products-item-image-one">
+                                    <img src="./img/lt1070.jpg" alt="">
+                                    <span class="products-item-image-badge">Новинка</span>
+                                </div>
+                                <div class="products-item-description">
+                                    <div class="products-item-title">
+                                        <h4>Плед "Клеточка" LT1070</h4>
+                                        <span class="products-item-price">3170.00грн</span>
+                                    </div>
+                                    <button class="products-item-btn"><i class="fas fa-shopping-cart"></i></button>
+                                </div>
+                            </div>
+                            <div class="products-item" data-price="1570">
+                                <div class="products-item-image products-item-image-three">
+                                    <img src="./img/product-3.png" alt="">
+                                </div>
+                                <div class="products-item-description">
+                                    <div class="products-item-title">
+                                        <h4>Покрывало гобеленовое PLG03</h4>
+                                        <span class="products-item-price">1570.00грн</span>
+                                    </div>
+                                    <button class="products-item-btn"><i class="fas fa-shopping-cart"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="logo"><img src="./img/logo-white.png" alt=""></div>
+                <div class="content">
+                    <div class="content-item">
+                        <h3 class="content-item-title">Контакты</h3>
+                        <p><i class="fas fa-home"></i>г. Львов, Кольцевая дорога<br><span>с. Зымна Вода, ул. Яворовская, 22</span><br><span>ТЦ "Три Слона. Все для дома "</span> </p>
+                        <p><i class="fas fa-phone"></i>+38(067)6742021 <br> <span>+38(068)6745417</span> </p>
+                        <img src="./img/visa.png" alt="">
+                        <img src="./img/mastercard.png" alt="">
+                        <img src="./img/paypal.png" alt="">
+                    </div>
+                    <div class="content-item">
+                        <h3 class="content-item-title">Магазин</h3>
+                        <ul class="content-item-list">
+                            <li class="content-item-list-point"><a href="#">Акции</a></li>
+                            <li class="content-item-list-point"><a href="#">О нас</a></li>
+                            <li class="content-item-list-point"><a href="#">Доставка</a></li>
+                            <li class="content-item-list-point"><a href="#">Политика безопасности</a></li>
+                            <li class="content-item-list-point"><a href="#">Услуги</a></li>
+                            <li class="content-item-list-point"><a href="#">Возврат товара</a></li>
+                        </ul>
+                    </div>
+                    <div class="content-item">
+                        <h3 class="content-item-title">Клиентам</h3>
+                        <ul class="content-item-list">
+                            <li class="content-item-list-point"><a href="#">Личный кабинет</a></li>
+                            <li class="content-item-list-point"><a href="#">История заказов</a></li>
+                            <li class="content-item-list-point"><a href="#">Закладки</a></li>
+                            <li class="content-item-list-point"><a href="#">Рассылка</a></li>
+                            <li class="content-item-list-point"><a href="#">Партнерская программа</a></li>
+                        </ul>
+                    </div>
+                    <div class="content-item">
+                        <h3 class="content-item-title">Дополнительно</h3>
+                        <ul class="content-item-list">
+                            <li class="content-item-list-point"><a href="#">Производители</a></li>
+                            <li class="content-item-list-point"><a href="#">Подарочные сертификаты</a></li>
+                            <li class="content-item-list-point"><a href="#">Скидки и распродажи</a></li>
+                            <li class="content-item-list-point"><a href="#">Карта сайта</a></li>
+                            <li class="content-item-list-point"><a href="#">Связаться с нами</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="copyright">
+        <div class="container">
+            <div class="row">
+                <div class="copyright-left">
+                    <p>LIMASO © 2017. Все права защищены.</p>
+                </div>
+                <div class="copyright-right">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fas fa-rss"></i></a>
+                    <a href="#"><i class="fab fa-google-plus-g"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal">
+        <div class="modal-header">
+            <div class="modal-header-btn">
+                <i class="fas fa-times"></i>
+            </div>
+        </div>
+        <div class="modal-body">
+            <div class="modal-body-title">Данные банковской карты</div>
+            <form class="form" autocomplete="off" novalidate>
+                <div class="front-card">
+                    <fieldset class="front-card-number">
+                        <label for="card-number">Номер карты</label>
+                        <div class="front-card-number-inputs">
+                            <input maxlength="4" required placeholder="0000" />
+                            <input maxlength="4" required placeholder="0000" />
+                            <input maxlength="4" required placeholder="0000" />
+                            <input maxlength="4" required placeholder="0000" />
+                        </div>
+
+                    </fieldset>
+
+                    <fieldset class="front-card-expiration">
+                        <label for="front-card-expiration-month">Срок действия</label>
+                        <div class="front-card-expiration-selects">
+                            <select class="front-card-expiration-month" required>
+                          <option></option>
+                          <option>01</option>
+                          <option>02</option>
+                          <option>03</option>
+                          <option selected>04</option>
+                          <option>05</option>
+                          <option>06</option>
+                          <option>07</option>
+                          <option>08</option>
+                          <option>09</option>
+                          <option>10</option>
+                          <option>11</option>
+                          <option>12</option>
+                        </select>
+                            <select class="front-card-expiration-year" required>
+                          <option></option>
+                          <option>2016</option>
+                          <option>2017</option>
+                          <option selected>2018</option>
+                          <option>2019</option>
+                          <option>2020</option>
+                          <option>2021</option>
+                          <option>2022</option>
+                          <option>2023</option>
+                          <option>2024</option>
+                          <option>2025</option>
+                        </select>
+                        </div>
+                    </fieldset>
+                    <fieldset class="front-card-holder">
+                        <input required placeholder="Держатель карты" />
+                    </fieldset>
+                </div>
+                <div class="back-card">
+                    <div class="back-card-line"></div>
+                    <fieldset class="back-card-ccv">
+                        <label for="back-card-ccv">Код CCV2 / CVC2</label>
+                        <input maxlength="3" required/>
+                    </fieldset>
+                </div>
+            </form>
+        </div>
+        <div class="modal-footer">
+            <div class="modal-footer-btn">Отправить</div>
+        </div>
+    </div>
+    <div class="modal-bg"></div>
+</body>
+
+<script src="./js/jquery.min.js"></script>
+<script src="./js/jquery-ui.js"></script>
+<script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+<script src="./js/main.js"></script>
+
+</html>
